@@ -78,14 +78,23 @@ main {
 .returnToAgentList {
     margin:auto;
     width: 300px;
-    background-color: lightgray;
+    height: 100px;
+    background-color: var(--LightBlue);
+    font-family: 'Dela Gothic One', cursive;
+    color:white;
     border-radius: 10px;
     border: 2px solid black;
     margin-bottom:50px;
 }
 
+.returnToAgentList p {
+    padding-top:20px;
+}
+
 .returnToAgentList:hover {
     cursor: pointer;
+    background-color: lightgray;
+    color: var(--DarkPink);
 }
 /*#endregion Buttons*/
 
