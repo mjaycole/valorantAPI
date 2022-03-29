@@ -1,0 +1,336 @@
+:root {
+    --DarkPink: #F2059F;
+    --LightPink: #F205B3;
+    --Navy: #060273;
+    --DarkBlue: #035AA6;
+    --LightBlue: #049DD9;
+}
+
+/*#region Header*/
+
+header {
+    background-color: var(--DarkBlue);
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header {
+    margin: auto;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 10px;
+    text-align: center;
+
+    color:white;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.title img {
+    width: 100px;
+    padding-right: 20px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    list-style:none;
+    display: inline;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    background-color: var(--DarkPink);
+    transition: .25s;
+}
+
+nav a {
+    text-decoration: none;
+    color:white;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+main {
+    margin-top: 20px;
+}
+/*#endregion Header*/
+
+main {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+/*#region Buttons*/
+.buttons {
+    text-align: center;
+}
+
+.returnToAgentList {
+    margin:auto;
+    width: 150px;
+    background-color: lightgray;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom:50px;
+}
+
+.returnToAgentList:hover {
+    cursor: pointer;
+}
+/*#endregion Buttons*/
+
+/*#region Agent List*/
+
+.agents { 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+}
+
+.agent {
+    background-color: var(--LightBlue);
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    color: var(--Navy);
+    font-family: 'Dela Gothic One', cursive;
+
+    padding: 20px;
+}
+
+.agent h3 {
+    font-size: 30pt;
+}
+
+.agent:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    color:var(--DarkPink);
+    transition: .25s;
+}
+
+.agent img {
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.abilities img {
+    max-width: 50px;
+}
+
+/*#endregion Agent List*/
+
+/*#region Agent Info*/
+
+.agent-info {
+    width: 80%;
+    margin:auto;
+}
+
+.ind-agent {
+    background-color: var(--DarkBlue);
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    color: white;
+    font-family: 'Dela Gothic One', cursive;
+
+    padding: 20px;
+}
+
+.ind-agent h3 {
+    font-size: 50pt;
+}
+
+.ind-agent p {
+    font-size: 15pt;
+}
+
+.ind-agent img {
+    margin:auto;
+    width: 600px;
+    margin-bottom: 40px;
+}
+
+.agent-abilities {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    text-align: center;
+    margin: auto;
+    margin-top:35px;
+}
+
+.ind-ability {
+    border: 3px solid white;
+    padding: 15px;
+}
+
+.ind-ability h4 {
+    font-size: 20pt;
+}
+
+.agent-abilities img {
+    max-width: 150px;
+    margin: auto;
+}
+
+/*#endregion Agent Info*/
+
+/*#region Weapon List*/
+.weapons { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.weapon {
+    background-color: var(--LightBlue);
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    color: var(--Navy);
+    font-family: 'Dela Gothic One', cursive;
+
+    padding: 20px;
+}
+
+.weapon:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    color:var(--DarkPink);
+    transition: .25s;
+}
+
+.weapon h3 {
+    font-size: 30pt;
+}
+
+.weapon img {
+    max-width: 300px;
+}
+/*#endregion Weapon List*/
+
+/*#region Weapon Info*/
+.weapon-info {
+    width: 80%;
+    margin:auto;
+}
+
+.ind-weapon {
+    background-color: var(--DarkBlue);
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    color: white;
+    font-family: 'Dela Gothic One', cursive;
+
+    padding: 20px;
+}
+
+.ind-weapon h3 {
+    font-size: 50pt;
+}
+
+.ind-weapon h4 {
+    font-size: 40px;
+}
+
+.ind-weapon p {
+    font-size: 15pt;
+}
+
+.ind-weapon img {
+    margin:auto;
+    width: 600px;
+    margin-bottom: 40px;
+}
+
+.shop {
+    margin: auto;
+}
+
+.shop hr {
+    width: 300px;
+    margin-top:-50px;
+}
+
+.stats {
+    margin: auto;
+    text-align: center;
+}
+
+.stats hr {
+    width: 300px;
+    margin-top:-50px;
+}
+
+.stats h4 {
+    font-size: 40px;
+}
+
+.stats h5 {
+    font-size: 30px;
+}
+
+.ranges {
+    margin-top: -50px;
+    display: flex;
+    gap: 150px;
+    text-align: center;
+}
+
+.skinsParent {
+    margin: auto;
+    width: 80%;
+}
+
+.skinsParent hr {
+    width: 300px;
+    margin-top:-50px;
+    margin-bottom: 50px;
+}
+
+.newSkin {
+    width:100%;
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.newSkin img {
+    padding: 20px;
+}
+/*#endregion Weapon Info*/
