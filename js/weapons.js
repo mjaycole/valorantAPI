@@ -115,6 +115,8 @@ function loadWeaponDetails(weapon) {
 
         let damageRanges = document.createElement('div');
         damageRanges.setAttribute('class', 'ranges');
+
+        damageRanges.append(rangeTitle);
     
         //Damage stats
         if (weaponList.data[weapon].weaponStats.damageRanges != null) {
@@ -147,7 +149,6 @@ function loadWeaponDetails(weapon) {
         stats.append(fireRate);
         stats.append(equipTime);
         stats.append(reloadTime);
-        stats.append(rangeTitle);
         stats.append(damageRanges);
     }
 
