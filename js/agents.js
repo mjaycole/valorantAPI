@@ -62,7 +62,9 @@ function loadAgentDetails(agent) {
     let returnButton = document.createElement('div');
     returnButton.setAttribute('class', 'returnToAgentList');
     returnButton.setAttribute('onclick', 'window.location.reload()');
-    returnButton.textContent = "Return to Agent List";
+    let returnButtonText = document.createElement('p');
+    returnButtonText.textContent = "Return to Agents List";
+    returnButton.append(returnButtonText);
     buttons.append(returnButton);
 
 

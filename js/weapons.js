@@ -44,8 +44,11 @@ function loadWeaponDetails(weapon) {
     let returnButton = document.createElement('div');
     returnButton.setAttribute('class', 'returnToAgentList');
     returnButton.setAttribute('onclick', 'window.location.reload()');
-    returnButton.textContent = "Return to Weapons List";
+    let returnButtonText = document.createElement('p');
+    returnButtonText.textContent = "Return to Weapons List";
+    returnButton.append(returnButtonText);
     buttons.append(returnButton);
+
 
 
     document.querySelector('.weapons').innerHTML = "";
@@ -115,6 +118,8 @@ function loadWeaponDetails(weapon) {
 
         let damageRanges = document.createElement('div');
         damageRanges.setAttribute('class', 'ranges');
+
+        damageRanges.append(rangeTitle);
     
         //Damage stats
         if (weaponList.data[weapon].weaponStats.damageRanges != null) {
@@ -147,7 +152,6 @@ function loadWeaponDetails(weapon) {
         stats.append(fireRate);
         stats.append(equipTime);
         stats.append(reloadTime);
-        stats.append(rangeTitle);
         stats.append(damageRanges);
     }
 
